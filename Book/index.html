@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request a Quote</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="brand-bar"></div>
+        <div class="header">
+            <div class="header-content">
+                <div class="logo-placeholder">RG Consultancy Services</div>
+                <h1>Transform Your Business</h1>
+                <p>Partner with industry-leading experts to elevate your brand and accelerate growth. Our tailored solutions drive measurable results.</p>
+            </div>
+            <div class="header-image">
+                <img src="logo.png" alt="Brand visual" />
+            </div>
+        </div>
+        
+        <div class="form-container">
+            
+            <h2 class="section-title">Tell us about yourself</h2>
+            <form id="quote-form" action="/book" method="POST">
+                <div class="form-row">
+                    <div class="form-col">
+                        <div class="form-group">
+                            <label for="name">Full Name <span class="required">*</span></label>
+                            <input type="text" id="name" name="name" placeholder="Your full name" required>
+                        </div>
+                    </div>
+                    <!-- <div class="form-col">
+                        <div class="form-group">
+                            <label for="company">Company Name <span class="required">*</span></label>
+                            <input type="text" id="company" name="company" placeholder="Your company" required>
+                        </div>
+                    </div> -->
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-col">
+                        <div class="form-group">
+                            <label for="email">Email Address <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" placeholder="your.email@company.com" required>
+                        </div>
+                    </div>
+                    <div class="form-col">
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Your contact number">
+                        </div>
+                    </div>
+                </div>
+                
+                <h2 class="section-title">What services are you interested in?</h2>
+                <div class="form-group">
+                    <div class="service-options">
+                        <div class="service-option">
+                            <input type="radio" id="service1" name="service"  name="brand" value="brand">
+                            <label for="service1">
+                                <span class="icon">&#128161;</span>
+                                Brand Consulting
+                            </label>
+                            <span class="checkmark"></span>
+                        </div>
+                        <div class="service-option">
+                            <input type="radio" id="service2" name="service" name="fintech" value="fintech">
+                            <label for="service2">
+                                <span class="icon">&#127775;</span>
+                                Fintech Consultancy
+                            </label>
+                            <span class="checkmark"></span>
+                        </div>
+                        <div class="service-option">
+                            <input type="radio" id="service3" name="service" name="research" value="research">
+                            <label for="service3">
+                                <span class="icon">&#128202;</span>
+                                Research Consultancy
+                            </label>
+                            <span class="checkmark"></span>
+                        </div>
+                        <div class="service-option">
+                            <input type="radio" id="service4" name="service" value="technology">
+                            <label for="service4">
+                                <span class="icon">&#9881;</span>
+                                Technology Consultancy
+                            </label>
+                            <span class="checkmark"></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <h2 class="section-title">Details of Consultancy Service Required</h2>
+                <div class="form-group">
+                    <label>Service timeline<span class="required">*</span></label>
+                    <div class="timeline-options">
+                        <div class="timeline-option">
+                            <input type="radio" id="urgency1" name="timeline" value="immediate" required>
+                            <label for="urgency1">Immediate<br>(1-2 weeks)</label>
+                            <span class="checkmark"></span>
+                        </div>
+                        <div class="timeline-option">
+                            <input type="radio" id="urgency2" name="timeline" value="soon">
+                            <label for="urgency2">Soon<br>(1-2 months)</label>
+                            <span class="checkmark"></span>
+                        </div>
+                        <div class="timeline-option">
+                            <input type="radio" id="urgency3" name="timeline" value="planning">
+                            <label for="urgency3">Planning Phase<br>(3+ months)</label>
+                            <span class="checkmark"></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="budget">Estimated Budget</label>
+                    <select id="budget" name="budget">
+                        <option value="" disabled selected>Select your budget range</option>
+                        <option value="under1k">Under $1,000</option>
+                        <option value="1k-5k">$1,000 - $5,000</option>
+                        <option value="5k-15k">$5,000 - $15,000</option>
+                        <option value="15k-30k">$15,000 - $30,000</option>
+                        <option value="30k-50k">$30,000 - $50,000</option>
+                        <option value="50k+">$50,000+</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="goals">Details of Expected Consultancy Service required<span class="required">*(Also specify with its current status)</span></label>
+                    <textarea id="message" name="message" placeholder="What specific outcomes are you looking to achieve?" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="details">Additional Details</label>
+                    <textarea id="details" name="details" placeholder="Share any additional context about your project, challenges, or specific requirements..."></textarea>
+                </div>
+                
+                <div class="brand-promise">
+                    <div class="promise-item">
+                        <div class="promise-icon">&#128336;</div>
+                        <div class="promise-title">Quick Response</div>
+                        <div class="promise-desc">We'll respond within 24 hours</div>
+                    </div>
+                    <div class="promise-item">
+                        <div class="promise-icon">&#129309;</div>
+                        <div class="promise-title">Expert Team</div>
+                        <div class="promise-desc">Industry leading consultants</div>
+                    </div>
+                    <div class="promise-item">
+                        <div class="promise-icon">&#128200;</div>
+                        <div class="promise-title">Proven Results</div>
+                        <div class="promise-desc">Measurable ROI focus</div>
+                    </div>
+                </div>
+                
+                <button type="submit">Request Your Customized Proposal</button>
+                
+                <div class="form-footer">
+                    <p>&#128274; Your information is secure and confidential</p>
+                    <p>Questions? Contact us at <strong>support@rgcs.co.in</strong></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

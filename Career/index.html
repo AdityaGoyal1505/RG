@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers - RG Consultancy Services</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <div id="logo">
+            <img src="../logo (2).png" alt="">
+            <p>RG Consultancy Services</p>
+        </div>
+
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="user">
+            <div class="center">
+                <a href="../index.html" class="link">Home</a>
+                <a href="../About/index.html" class="link">About</a>
+                <div class="dropdown">
+                    <a href="#serv" class="link">Services</a>
+                    <div class="dropdown-menu">
+                        <a href="../Brand/index.html" class="dropdown-item">
+                            <i class="fas fa-bullhorn"></i>
+                            Brand Building
+                        </a>
+                        <a href="../Fintech/index.html" class="dropdown-item">
+                            <i class="fas fa-chart-line"></i>
+                            Fintech Solutions
+                        </a>
+                        <a href="../Research/index.html" class="dropdown-item">
+                            <i class="fas fa-book-open"></i>
+                            Research Advisory
+                        </a>
+                        <a href="../Technology/index.html" class="dropdown-item">
+                            <i class="fas fa-microchip"></i>
+                            Technology Solutions
+                        </a>
+                    </div>
+                </div> 
+                <a href="#products" class="link">Products</a>
+            </div>
+            <div class="slot">
+                <a href="https://book-p0c7.onrender.com/">REQUEST A QUOTE</a>
+            </div>
+            <div class="insta">
+                <img src="../Social/insta.png" alt="insta">
+            </div>
+            <div class="face">
+                <img src="../Social/fb.png" alt="facebook">
+            </div>
+            <div class="linkd">
+                <img src="../Social/linkdin.png" alt="linkdin">
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="hero" id="hero">
+        <div class="overlay">
+          <div class="content">
+            <h1>Join Our Team</h1>
+            <p>We're always on the lookout for passionate, talented individuals who want to make an impact. Explore your next career opportunity with us.</p>
+            <!-- <a href="#openings" class="btn btn-primary">View Open Positions</a> -->
+          </div>
+        </div>
+    </div>
+    <!-- Benefits Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Why Join Us?</h2>
+            
+            <div class="benefits-container">
+                <div class="benefits-intro">
+                    <h3>Benefits & Perks at RG Consultancy</h3>
+                    <p>We believe in taking care of our team members. Here's what you can expect when you join our global family.</p>
+                </div>
+                
+                <div class="benefits-grid">
+                    
+                    <!-- Benefit 2 -->
+                    <div class="benefit-item">
+                        <div class="benefit-icon">💼</div>
+                        <h4 class="benefit-title">Career Growth</h4>
+                        <p class="benefit-desc">Personalized development plans with learning budgets and mentorship opportunities.</p>
+                    </div>
+                    
+                    <!-- Benefit 4 -->
+                    <div class="benefit-item">
+                        <div class="benefit-icon">💰</div>
+                        <h4 class="benefit-title">Competitive Compensation</h4>
+                        <p class="benefit-desc">Above-industry salaries with performance bonuses and equity options.</p>
+                    </div>
+                    
+                    <!-- Benefit 8 -->
+                    <div class="benefit-item">
+                        <div class="benefit-icon">🎉</div>
+                        <h4 class="benefit-title">Team Retreats</h4>
+                        <p class="benefit-desc">Annual company retreats in exciting locations to connect, learn, and celebrate.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section" id="openings">
+        <div class="container">
+            <h2 class="section-title">Open Positions</h2>
+            
+            <div class="job-categories">
+                <button class="category-btn active" data-department="all">All Departments</button>
+                <button class="category-btn" data-department="IT & Development">IT & Development</button>
+                <button class="category-btn" data-department="Business Strategy">Business Strategy</button>
+                <button class="category-btn" data-department="Human Resources">Human Resources</button>
+                <button class="category-btn" data-department="Marketing">Marketing</button>
+            </div>
+            
+            <div class="job-openings">
+                <!-- Job Card 1 -->
+                <div class="job-card" data-department="IT & Development">
+                    <div class="job-header">
+                        <div class="job-title">
+                            Project Management Intern
+                            <span class="badge badge-new">New</span>
+                        </div>
+                        <div class="job-department">IT & Development</div>
+                    </div>
+                    <div class="job-details">
+                        <div class="job-meta">
+                            <div class="meta-item">
+                                <span class="meta-icon">📍</span>
+                                <span>Hybrid</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-icon">⏰</span>
+                                <span>Part-time</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-icon">🗓️</span>
+                                <span>Posted 6 days ago</span>
+                            </div>
+                        </div>
+                        <div class="job-description">
+                            <p>We're looking for a skilled Frontend Developer to create seamless user experiences.</p>
+                            <ul>
+                                <li>0-3 years of experience with modern JS frameworks</li>
+                                <li>Strong proficiency in HTML5, CSS3, and responsive design</li>
+                                <li>Experience with MERN</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="job-footer">
+                        <div class="salary">Stipend based</div>
+                        <a href="#apply" class="btn job-cta">Apply Now</a>
+                    </div>
+                </div>
+                
+                <!-- Job Card 2 -->
+                <div class="job-card" data-department="Marketing">
+                    <div class="job-header">
+                        <div class="job-title">
+                            Business Development Manager-Digital Marketing Intern
+                            <span class="badge badge-new">New</span>
+                        </div>
+                        <div class="job-department">Marketing</div>
+                    </div>
+                    <div class="job-details">
+                        <div class="job-meta">
+                            <div class="meta-item">
+                                <span class="meta-icon">📍</span>
+                                <span>Hybrid</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-icon">⏰</span>
+                                <span>Part-time</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-icon">🗓️</span>
+                                <span>Posted 2 days ago</span>
+                            </div>
+                        </div>
+                        <div class="job-description">
+                            <p>We're looking for a skilled Digital Channel Management,Brand Awareness and Reputation Management to create awareness.</p>
+                            <ul>
+                                <li>0-3 years of experience with Lead Generation and Conversion</li>
+                                <li>Strong proficiency in Digital Marketing Strategy Development</li>
+                                <li>Experience Social Media Management</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="job-footer">
+                        <div class="salary">Stipend based</div>
+                        <a href="#apply" class="btn job-cta">Apply Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="apply" style="background-color: #EAF2FD; padding: 80px 0;">
+        <div class="container" style="max-width: 800px;">
+            <h2 class="section-title">How to Apply</h2>
+            
+            <div style="background: white; padding: 40px; border-radius: 16px; box-shadow: 0 10px 30px rgba(122, 56, 56, 0.05);">
+                <h3 style="font-size: 24px; margin-bottom: 30px; text-align: center;">Ready to join our team?</h3>
+                
+                <div style="margin-bottom: 30px;">
+                    <p style="font-size: 18px; margin-bottom: 15px;"><strong>Step 1:</strong> Choose the position that matches your skills and interests.</p>
+                    <p style="font-size: 18px; margin-bottom: 15px;"><strong>Step 2:</strong> Prepare your resume and portfolio showcasing relevant experience.</p>
+                    <p style="font-size: 18px; margin-bottom: 15px;"><strong>Step 3:</strong> Email your application to:</p>
+                    <p style="text-align: center; margin: 25px 0;">
+                        <span style="font-weight: 600; color: var(--primary); background: rgba(122, 56, 56, 0.1); padding: 10px 20px; border-radius: 50px; display: inline-block;">support@rgcs.co.in</span>
+                    </p>
+                    <p style="text-align: center;">Subject line: <em>Application – [Position Title]</em></p>
+                </div>
+                
+                <hr style="border: none; height: 1px; background-color: var(--border); margin: 30px 0;">
+                
+                <div style="text-align: center; margin-top: 30px;">
+                    <h4 style="margin-bottom: 15px;">Stay Connected</h4>
+                    <p style="margin-bottom: 20px;">Follow us for the latest updates and behind-the-scenes glimpses.</p>
+                    <div style="display: flex; justify-content: center; gap: 15px;">
+                        <a href="#" style="width: 45px; height: 45px; border-radius: 50%; background: var(--gradient); color: white; display: flex; align-items: center; justify-content: center; font-size: 18px; text-decoration: none;">in</a>
+                        <a href="#" style="width: 45px; height: 45px; border-radius: 50%; background: var(--gradient); color: white; display: flex; align-items: center; justify-content: center; font-size: 18px; text-decoration: none;">ig</a>
+                        <a href="#" style="width: 45px; height: 45px; border-radius: 50%; background: var(--gradient); color: white; display: flex; align-items: center; justify-content: center; font-size: 18px; text-decoration: none;">tw</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="footer-section footer-logo">
+            <img src="../logo (2).png" alt="RG Consultancy Logo">
+            <h3>RG Consultancy Services</h3>
+            <p>Developing Solutions for Tomorrow</p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Services</h3>
+            <ul>
+                <li><a href="../Brand/index.html">Brand Building</a></li>
+                <li><a href="../Fintech/index.html">Fintech Solutions</a></li>
+                <li><a href="../Research/index.html">Research Advisory</a></li>
+                <li><a href="../Technology/index.html">Technology Solutions</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Explore More</h3>
+            <ul>
+                <li><a href="#blogs">Blogs</a></li>
+                <li><a href="Career/index.html">Careers</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Connect with Us</h3>
+            <p>Email: <a href="mailto:support@rgccs.co.in">support@rgccs.co.in</a></p>
+            <div class="social-icons">
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get all necessary elements
+            const categoryButtons = document.querySelectorAll('.category-btn');
+            const jobCards = document.querySelectorAll('.job-card');
+            
+            // Add click event listener to each category button
+            categoryButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    categoryButtons.forEach(btn => btn.classList.remove('active'));
+                    
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    // Get selected department
+                    const selectedDepartment = this.getAttribute('data-department');
+                    
+                    // Filter job cards
+                    jobCards.forEach(card => {
+                        // Get card's department
+                        const cardDepartment = card.getAttribute('data-department');
+                        
+                        // Hide the card first (removes any previous animation class)
+                        card.style.display = 'none';
+                        card.classList.remove('fade-in');
+                        
+                        // Show all cards if "All Departments" or if card matches selected department
+                        if (selectedDepartment === 'all' || cardDepartment === selectedDepartment) {
+                            // Use setTimeout to create a slight stagger effect
+                            setTimeout(() => {
+                                card.style.display = 'flex';
+                                card.classList.add('fade-in');
+                            }, 50);
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+    <script src="../script.js"></script>
+</body>
+</html>
