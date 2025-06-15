@@ -201,7 +201,7 @@ body {
 
 .hero {
     background: no-repeat center center/cover;
-    height: 100vh;
+    height: 95vh;
     position: relative;
     color: white;
     transition: background-image 1.5s cubic-bezier(0.77, 0, 0.175, 1);
