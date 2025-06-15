@@ -167,7 +167,7 @@ body {
 
 .hero {
     background: no-repeat center center/cover;
-    height: 100vh;
+    height: 95vh;
     position: relative;
     color: white;
     transition: background-image 1.5s cubic-bezier(0.77, 0, 0.175, 1);
@@ -312,9 +312,9 @@ body {
 
 .services .serv{
     display: grid;
-    /* grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr; */
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));  */
     grid-template-rows: auto;
     justify-content: center;
     gap: 50px;
