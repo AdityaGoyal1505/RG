@@ -6,6 +6,7 @@ const router = express.Router();
 
 // Register route (use only once to create admin user)
 router.post("/register", async (req, res) => {
+  console.log(req.body); // Add this line
   const { username, password } = req.body;
 
   try {
