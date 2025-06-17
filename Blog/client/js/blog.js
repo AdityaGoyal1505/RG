@@ -6,7 +6,7 @@ async function loadPosts() {
   const container = document.getElementById("posts-container");
   posts.forEach(post => {
     container.innerHTML += `
-      <div>
+      <div id="post">
         <h3><a href="post.html?id=${post._id}">${post.title}</a></h3>
         <p>${post.content.slice(0, 100)}...</p>
       </div>`;

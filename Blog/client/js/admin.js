@@ -1,7 +1,16 @@
 const API_BASE = "http://localhost:5000/api/posts";
-
+const user = document.getElementById("admin-username");
 async function loadDashboard() {
-  const res = await fetch(API_BASE);
+  const token = localStorage.getItem("token");
+  if (!token) {
+    window.location.href = "login.html";
+    return;
+  }
+  const res = await fetch(API_BASE, {
+    headers: { "Authorization": `Bearer ${token}` }
+  });
+
+  user.innerText = localStorage.getItem("username") || "Admin";
   const posts = await res.json();
   const list = document.getElementById("post-list");
   posts.forEach(post => {

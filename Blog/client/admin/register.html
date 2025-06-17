@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><title>Register</title></head>
+<link rel="stylesheet" href="css/style.css">
+<body>
+  <h1>Admin Dashboard</h1>
+  <div>
+    <h2>Register</h2>
+    <hr>
+    <form onsubmit="register(event)">
+      <label for="name">Name<span>*</span></label>
+      <input id="name" placeholder="Name" required /><br/>
+      <label for="email">Email<span>*</span></label>
+      <input type="email" id="email" placeholder="Email" required /><br/>
+      <label for="username">Username<span>*</span></label>
+      <input type="text" id="username" placeholder="Username" required /><br/>
+      <label for="phone">Phone Number<span>*</span></label>
+      <input type="number" id="phone" placeholder="Phone" required /><br/>
+      <label for="password">Password<span>*</span></label>
+      <input id="password" type="password" placeholder="Password" required /><br/>
+      <button type="submit">Register</button>
+    </form>
+  </div>
+  <p>Already have an account? <a href="login.html">Login</a></p>
+  <script src="../js/auth.js"></script>
+</body>
+</html>
