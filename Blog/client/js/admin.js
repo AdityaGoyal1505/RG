@@ -15,7 +15,7 @@ async function loadDashboard() {
   const list = document.getElementById("post-list");
   posts.forEach(post => {
     list.innerHTML += `
-      <div>
+      <div id="post">
         <h3>${post.title}</h3>
         <button onclick="editPost('${post._id}')">Edit</button>
         <button onclick="deletePost('${post._id}')">Delete</button>

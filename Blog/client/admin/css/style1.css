@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+  
+body {
+    background-color: #EAF2FD;
+    color: #3a3a3a;
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+h2{
+    font-size: 25px;
+}
+
+
+input{
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+span{
+    color: red;
+}
+
+#post-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 80vw;
+    background-color: white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+#post {
+    margin: auto;
+    width: 80%;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    border:1px solid #ccc;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+#post h3 a{
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-optical-sizing: auto;
+    font-variant-caps: all-small-caps;
+    font-variant-numeric: lining-nums;
+    font-variant-east-asian: full-width;
+    font-variant-alternates: stylistic;
+    text-decoration: none;
+    color: #000;
+}
+
+button,a{
+    padding: 12px 15px;
+    margin:10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #EAF2FD;
+    color: #000;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+button:hover,a:hover{
+    background-color: #111b4e;
+    color: #EAF2FD;
+    box-shadow: 0px 5px 10px #111b4e23;
+}
+
+
+a{
+    margin-bottom: 400px;
+    text-decoration: none;
+    font-weight: 700;
+}
