@@ -272,9 +272,40 @@ h1 a:hover{
     color: #000;
 }
 
+#post-detail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#post-detail h2{
+    font-size: 34px;
+    margin-bottom: 10px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-optical-sizing: auto;
+    font-variant-caps: all-small-caps;
+    font-variant-numeric: lining-nums;
+    font-variant-east-asian: full-width;
+    font-variant-alternates: stylistic;
+}
+
 #post-detail img{
-    max-width: 200px;
-    height: 100px;
+    width: 70%;
+    height: 300px;
     border-radius: 8px;
     border: 1px solid #3a3a3a;
+}
+
+#post-detail p{
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 20px;
+    font-family: 'Josefin Sans', sans-serif;
 }
