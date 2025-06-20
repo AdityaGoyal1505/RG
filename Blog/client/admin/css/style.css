@@ -61,6 +61,11 @@ hr{
     align-self: center;
 }
 
+#content{
+    min-height: 200px;
+    width: 100%;
+}
+
 input{
     padding: 12px 15px;
     border: 1px solid #ccc;
