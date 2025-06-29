@@ -24,9 +24,11 @@ async function loadSinglePost() {
   detail.innerHTML = `
     <h2>${post.title}</h2>
     <img src="http://localhost:5000${post.imageUrl}" width="300" />
-    <p><strong>Author:</strong> ${post.author}</p>
-    <p><strong>Affiliation:</strong> ${post.affiliation}</p>
-    <p><strong>LinkedIn:</strong> <a href="${post.link}" target="_blank">${post.link}</a></p>
+    <div id="div">
+      <p id="author"><strong>Author:</strong> ${post.author}</p>
+      <p id="affilation"><strong>Affiliation:</strong> ${post.affiliation}</p>
+      <p id="linkedin"><strong>LinkedIn:</strong> <a href="${post.link}" target="_blank">${post.link}</a></p>
+    </div>
     <p>${post.content}</p>
     <small>${post.tags.join(", ")}</small>`;
 }

@@ -297,7 +297,7 @@ h1 a:hover{
 }
 
 #post-detail img{
-    width: 70%;
+    width: 50%;
     height: 300px;
     border-radius: 8px;
     border: 1px solid #3a3a3a;
@@ -308,4 +308,22 @@ h1 a:hover{
     line-height: 1.6;
     margin-top: 20px;
     font-family: 'Josefin Sans', sans-serif;
+}
+
+#div{
+    width: 50%;
+    font-size: 1px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: left;
+    text-align: left;
+}
+
+#div #author,
+#div #affilation,#div #linkedin {
+    font-size: 10px;
+    color: #555;
+    margin: -2px;    
 }
