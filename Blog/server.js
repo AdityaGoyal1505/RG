@@ -18,6 +18,18 @@ app.use(express.json());
 // ✅ Serve uploaded files correctly
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
+app.use(express.static(path.join(__dirname, 'client')));
+
+// Root route serves index.html
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'client', 'index.html'));
+});
+
+// Optionally: catch-all route for SPA (if using React Router)
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'client', 'index.html'));
+});
+
 // API Routes
 app.use("/api/posts", postRoutes);
 app.use("/api/auth", authRoutes);
