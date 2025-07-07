@@ -460,6 +460,7 @@ a .div i{
 .marquee-content img{
     max-height: 150px;
     max-width: 200px;
+    border-radius: 5px;
 }
   
 .marquee-content span {
@@ -745,10 +746,13 @@ body{
     .center {
         display: flex;
         flex-direction: column;
+        gap:20px;
         width: 100%;
         margin-bottom: 20px;
     }
-    
+    .dropdown{
+        margin-top: -20px;
+    }
     .link, .dropdown .link {
         padding: 5px 0;
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);

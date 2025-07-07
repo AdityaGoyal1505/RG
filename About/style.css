@@ -638,8 +638,12 @@ body{
     .center {
         display: flex;
         flex-direction: column;
+        gap:20px;
         width: 100%;
         margin-bottom: 20px;
+    }
+    .dropdown{
+        margin-top: -20px;
     }
     
     .link, .dropdown .link {
@@ -770,19 +774,36 @@ body{
         max-width: 100%;
         box-sizing: border-box;
     }
+
+    .ab{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+        margin-left: -10px;
+        gap:-20px;
+    }
+    .ab img{
+        width: 90vw;
+    }
     
     .services {
         width: 100vw;
         overflow-x: hidden;
         padding: 0;
         margin: 0;
+        
     }
     
     .services .serv {
+        display: flex;
+        flex-direction: column;
         grid-template-columns: 1fr;
         margin: 0 5vw; /* Use viewport units instead of percentage */
-        gap: 10px;
-        width: 90vw;
+        gap: 20px;
+        width: 80vw;
         box-sizing: border-box;
     }
 

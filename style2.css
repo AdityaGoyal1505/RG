@@ -651,8 +651,12 @@ body{
     .center {
         display: flex;
         flex-direction: column;
+        gap:20px;
         width: 100%;
         margin-bottom: 20px;
+    }
+    .dropdown{
+        margin-top: -20px;
     }
     
     .link, .dropdown .link {
