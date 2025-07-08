@@ -1,4 +1,4 @@
-const API_BASE = "http://localhost:5000/api/posts";
+const API_BASE = "https://blog-8ndo.onrender.com//posts";
 const user = document.getElementById("admin-username");
 async function loadDashboard() {
   const token = localStorage.getItem("token");
@@ -50,7 +50,7 @@ async function submitPost(event) {
   }
 
   try {
-    const response = await fetch("http://localhost:5000/api/posts", {
+    const response = await fetch("https://blog-8ndo.onrender.com/api/posts", {
       method: "POST",
       body: formData,
     });

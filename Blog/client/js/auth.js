@@ -4,7 +4,7 @@ async function login(e) {
   const username = document.getElementById("username").value;
   const password = document.getElementById("password").value;
 
-  const res = await fetch("http://localhost:5000/api/auth/login", {
+  const res = await fetch("https://blog-8ndo.onrender.com/auth/login", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ username, password }),
@@ -32,7 +32,7 @@ async function register(e) {
   const name = document.getElementById("name").value;
   const phone = document.getElementById("phone").value;
 
-  const res = await fetch("http://localhost:5000/api/auth/register", {
+  const res = await fetch("https://blog-8ndo.onrender.com/api/auth/register", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ username, password, email, name, phone }),

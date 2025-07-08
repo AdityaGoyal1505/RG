@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:5000/api/posts";
+const API_URL = "https://blog-8ndo.onrender.com/api/posts";
 
 async function loadPosts() {
   const res = await fetch(API_URL);
@@ -32,40 +32,3 @@ async function loadSinglePost() {
     <p>${post.content}</p>
     <small>${post.tags.join(", ")}</small>`;
 }
-
-function toggleMenu() {
-    const hamburger = document.querySelector('.hamburger');
-    const userMenu = document.querySelector('.user');
-    
-    if (hamburger && userMenu) {
-        hamburger.classList.toggle('active');
-        userMenu.classList.toggle('active');
-    }
-}
-
-document.addEventListener('DOMContentLoaded', function() {
-    const dropdowns = document.querySelectorAll('.dropdown');
-    
-    dropdowns.forEach(dropdown => {
-        const menu = dropdown.querySelector('.dropdown-menu');
-        let timeout;
-        
-        // Only apply hover effects on desktop (non-mobile)
-        if (window.innerWidth > 768) {
-            dropdown.addEventListener('mouseenter', function() {
-                clearTimeout(timeout);
-                menu.style.opacity = '1';
-                menu.style.visibility = 'visible';
-                menu.style.transform = 'translateX(-50%) translateY(0)';
-            });
-            
-            dropdown.addEventListener('mouseleave', function() {
-                timeout = setTimeout(() => {
-                    menu.style.opacity = '0';
-                    menu.style.visibility = 'hidden';
-                    menu.style.transform = 'translateX(-50%) translateY(10px)';
-                }, 100);
-            });
-        }
-    });
-});
