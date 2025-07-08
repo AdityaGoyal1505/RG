@@ -201,7 +201,7 @@ body {
 
 .hero {
     background: no-repeat center center/cover;
-    height: 100vh;
+    height: 80vh;
     position: relative;
     color: white;
     transition: background-image 1.5s cubic-bezier(0.77, 0, 0.175, 1);
@@ -325,6 +325,11 @@ body {
 
 .div h3{
     margin-top: -30px;
+}
+
+.div h3 a,.div p a{
+    color: white;
+    text-decoration: none;
 }
 .serv .div{
     width: 100%;

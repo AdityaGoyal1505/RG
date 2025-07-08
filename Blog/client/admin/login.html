@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><title>Login</title></head>
+<link rel="stylesheet" href="css/style.css">
+<body>
+  <h1>Admin Dashboard</h1>
+  <div>
+    <h2>Login</h2>
+    <hr>
+    <form onsubmit="login(event)">
+      <label for="username">Username<span>*</span></label>
+      <input id="username" placeholder="Username" required /><br/>
+      <label for="password">Password<span>*</span></label>
+      <input id="password" type="password" placeholder="Password" required /><br/>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+  <p>Don't have an account? <a href="register.html">Register</a></p>
+  <script src="../js/auth.js"></script>
+</body>
+</html>

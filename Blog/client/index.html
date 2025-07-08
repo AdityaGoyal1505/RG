@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Blog Home</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body onload="loadPosts()">
+  <div class="navbar">
+        <div id="logo">
+            <img src="../../logo (2).png" alt="">
+            <p>RG Consultancy Services</p>
+        </div>
+
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="user">
+            <div class="center">
+                <a href="../../index.html" class="link">Home</a>
+                <a href="../../About/index.html" class="link">About</a>
+                <div class="dropdown">
+                    <a href="#serv" class="link">Services</a>
+                    <div class="dropdown-menu">
+                        <a href="../Brand/index.html" class="dropdown-item">
+                            <i class="fas fa-bullhorn"></i>
+                            Brand Building
+                        </a>
+                        <a href="../Fintech/index.html" class="dropdown-item">
+                            <i class="fas fa-chart-line"></i>
+                            Fintech Solutions
+                        </a>
+                        <a href="../Research/index.html" class="dropdown-item">
+                            <i class="fas fa-book-open"></i>
+                            Research Advisory
+                        </a>
+                        <a href="../Technology/index.html" class="dropdown-item">
+                            <i class="fas fa-microchip"></i>
+                            Technology Solutions
+                        </a>
+                    </div>
+                </div> 
+                <a href="#products" class="link">Products</a>
+            </div>
+            <div class="slot">
+                <a href="https://book.rgcs.co.in/">REQUEST A QUOTE</a>
+            </div>
+            <div class="social">
+            <div class="insta">
+                <img src="../../Social/insta.png" alt="insta">
+            </div>
+            <div class="face">
+                <img src="../../Social/fb.png" alt="facebook">
+            </div>
+            <div class="linkd">
+                <img src="../../Social/linkdin.png" alt="linkdin">
+            </div>
+            </div>
+        </div>
+    </div>
+
+  <h1>Blog Posts</h1>
+  <div id="posts-container"></div>
+  <script src="js/blog.js"></script>
+</body>
+</html>

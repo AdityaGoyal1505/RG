@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body {
+    background-color: #EAF2FD;
+    color: #3a3a3a;
+    margin: 0;
+    padding: 0;
+    font-family: Arial,sans-serif;
+}
+
+#logo{
+    display: flex;
+}
+#logo a{
+    text-decoration: none;
+    color: white;
+}
+#logo img{
+    margin-top: 5px;
+    height: 50px;
+    /* background-color: black; */
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    width: 100%;
+    font-family: "Josefin Sans", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: white;
+    background-color: #111b4e;
+}
+
+.link,.dropdown-menu a{
+    position: relative;
+    text-decoration: none;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-top: 5px;
+    margin: 5px;
+    color: white;
+}
+
+.navbar a::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1.5px;
+    width: 0;
+    background-color: #6c82f371;
+    transition: width 0.7s ease;
+}
+
+.navbar a:hover::after{
+    width: 100%;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(10px);
+    background-color: white;
+    min-width: 200px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s ease;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.dropdown-menu a {
+    display: flex;
+    align-items: center;
+    color: #333;
+    padding: 10px 16px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    font-size: 14px;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f8f9ff;
+}
+
+.dropdown-menu a i{
+    margin-right: 10px;
+    color: #6366f1;
+}
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+
+}
+
+.user {
+    display: flex;
+    align-items: center; 
+    gap: 10px;
+    padding-right: 10px;
+}
+
+.slot a{
+    background-color:#6c82f3;
+    font-size: 16px;
+    border-radius: 25px;
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    margin-right: 5px;
+    transition: 0.4s;
+}
+
+.slot button{
+    background-color: transparent;
+    border: none;
+
+}
+
+.slot a{
+    color: white;
+    text-decoration: none;
+}
+
+.slot a:hover::after{
+    width: 0%;
+}
+
+.slot a:hover{
+    background-color:white;
+    cursor: pointer;
+    color: #6c82f3;
+    box-shadow: 0px 0px 0px #6c82f3;
+    scale: 1.1;
+}
+.insta, .face, .linkd {
+    display: inline;
+}
+
+.insta > img, .linkd > img, .face > img {
+    margin-top: 5px;
+    margin-left: 5px;
+    width: 25px;
+    height: 25px;
+    filter: invert(100%);
+}
+
+/* Hamburger Menu Styles */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+    transition: 0.3s;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+  
+body {
+    background-color: #EAF2FD;
+    color: #3a3a3a;
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+#posts-container{
+    border-radius: 8px;
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 50px;
+}
+
+h1{
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+h1 a{
+    position:absolute;
+    right: 50px;
+    font-weight: 700;
+    background-color: #EAF2FD;
+    color: #111b4e;
+    margin-top: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-optical-sizing: auto;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+h1 a:hover{
+    background-color: #111b4e;
+    color: #EAF2FD;
+    box-shadow: 0px 5px 10px #111b4e23;
+    transform: scale(1.05);
+    padding: 5px 10px;
+}
+
+#post {
+    /* width: 50%; */
+    /* max-width: 800px; */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#post h3 a{
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-optical-sizing: auto;
+    font-variant-caps: all-small-caps;
+    font-variant-numeric: lining-nums;
+    font-variant-east-asian: full-width;
+    font-variant-alternates: stylistic;
+    text-decoration: none;
+    color: #000;
+}
+
+#post-detail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#post-detail h2{
+    font-size: 34px;
+    margin-bottom: 10px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-optical-sizing: auto;
+    font-variant-caps: all-small-caps;
+    font-variant-numeric: lining-nums;
+    font-variant-east-asian: full-width;
+    font-variant-alternates: stylistic;
+}
+
+#post-detail img{
+    width: 50%;
+    height: 300px;
+    border-radius: 8px;
+    border: 1px solid #3a3a3a;
+}
+
+#post-detail p{
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#div{
+    width: 50%;
+    font-size: 1px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: left;
+    text-align: left;
+}
+
+#div #author,
+#div #affilation,#div #linkedin {
+    font-size: 10px;
+    color: #555;
+    margin: -2px;    
+}
